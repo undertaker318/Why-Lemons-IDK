@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Aftermath Ledger</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<header id="pageHeader">
+		<nav>
+			<ul class="navBar">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="faq.html">Aftermath</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<section class="content split">
+		<article class="panel">
+			<h1>Aftermath <span>Recap</span></h1>
+			<p><strong>Exhibit D:</strong> The follow-up panel that nobody asked for yet everyone skims. I took notes on <u>every</u> fumble and turned it into a scrapbook.</p>
+			<button id="togglePanel">Toggle receipts</button>
+			<div id="receipts" class="fold">
+				<p><small><del>Objectively</del> Subjectively speaking, the hype peaked at the RSVP form. Everything after was a slow descent punctuated by <mark>confetti</mark> bugs.</small></p>
+				<ul>
+					<li>Ticket portal redirected to a spreadsheet. Twice.</li>
+					<li>Livestream window nested inside another livestream window.</li>
+					<li>Moderator forgot to unmute for 7 minutes; chat improvised.</li>
+				</ul>
+			</div>
+		</article>
+
+		<article class="panel meter">
+			<h2>Vibe Meter</h2>
+			<p>Drag to choose how dramatic the recap feels.</p>
+			<input type="range" id="vibeRange" min="0" max="10" value="3">
+			<output id="vibeLabel">Mild side-eye</output>
+			<figure>
+				<img src="vague.png" width="360" height="180" alt="dramatic flyer" class="tilt">
+				<figcaption>Yes, it is still orange for no reason.</figcaption>
+			</figure>
+		</article>
+
+		<article class="panel spinner">
+			<h2>Hot Take Spinner</h2>
+			<p>Press to assign a completely unfair score.</p>
+			<button id="spinScore">Spin</button>
+			<p id="scoreResult">Awaiting verdict...</p>
+			<aside>
+				<p><sup>*</sup> Scores are made up, but the <em>shade</em> is real.</p>
+			</aside>
+		</article>
+	</section>
+
+	<script src="script.js"></script>
+</body>
+
+</html>
